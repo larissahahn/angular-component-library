@@ -1,0 +1,22 @@
+{
+	"Animations": {
+		"prefix" : "angularanimate",
+		"body": ["animations: [trigger('myTrigger', [])]"],
+		"description": "Create Angular Animations"
+	},
+	"Animate State: Small": {
+		"prefix": "statesmall",
+		"body": ["state('small', style({transform: 'scale(1)'})),"],
+		"description": "Angular Animation Trigger State: Small"
+	},
+	"Animate State: Large": {
+		"prefix": "statelarge",
+		"body": ["state('large', style({transform: 'scale(1.4)'})),"],
+		"description": "Angular Animation Trigger State: Large"
+	},
+	"Animation Transition: Growth (Small <=> Large)": {
+		"prefix": "growthtransition",
+		"body": ["transition('small <=> large', animate('500ms'))"],
+		"description": "Angular Animation Transition - Growth Small to Large"
+	}
+}
