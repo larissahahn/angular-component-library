@@ -3,3 +3,4 @@
  */
 
 export * from './lib/components/components.module';
+export * from './lib/components/button/button.component';
