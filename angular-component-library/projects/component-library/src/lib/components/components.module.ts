@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ButtonComponent } from './button/button.component';
-import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
+
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [ButtonComponent],
@@ -13,7 +17,9 @@ import { MatBadgeModule } from '@angular/material/badge';
     BrowserAnimationsModule,
     CommonModule,
     MatBadgeModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   exports: [ButtonComponent]
 })

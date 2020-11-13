@@ -1,0 +1,28 @@
+.mat-flat-button.mat-accent {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    background-color: #EC407A;
+    border-radius: 2em;
+    border: 0.16em solid rgba(255,255,255,0);
+    box-shadow: 5px 5px 5px 0px #B4004E;
+    transition: all 0.2s;
+}
+
+.mat-flat-button.mat-accent:hover {
+    border-color: rgba(255,255,255,1);
+}
+
+@media all and (max-width: 30em) {
+    a.mat-flat-button {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
+
+.sign-up-label {
+    color: black;
+    font-family: 'Merriweather';
+    font-size: 15pt;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+}
