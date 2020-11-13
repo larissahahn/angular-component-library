@@ -1,5 +1,6 @@
 <button type="button" class="pulse"
-        mat-flat-button color="accent" 
+        mat-flat-button color="accent"
+        [@myTrigger]='state'
         (click)="handleClick()">
     <label class="mat-typography sign-up-label">SIGN UP</label>
 </button>

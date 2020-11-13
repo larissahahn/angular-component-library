@@ -12,13 +12,8 @@
     border-radius: 2em;
     border: 0.16em solid rgba(255,255,255,0);
     box-shadow: 3px 4px 4px 0 rgb(180, 0, 78, .35);
-    transition: all 0.2s;
     width: 10em;
 }
-
-/* .mat-flat-button.mat-accent:hover {
-    //hover effects/ animation effects
-}*/
 
 @media all and (max-width: 30em) {
     a.mat-flat-button {

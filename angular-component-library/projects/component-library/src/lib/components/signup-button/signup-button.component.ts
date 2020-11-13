@@ -5,29 +5,29 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
+  keyframes
 } from '@angular/animations';
 
 @Component({
   selector: 'lib-signup-button',
   templateUrl: './signup-button.component.html',
   styleUrls: ['./signup-button.component.css'],
-  animations: [
-    // button animations
-  ]
+  animations: [trigger('myTrigger', [
+    state('small', style({transform: 'scale(1)'})),
+    state('large', style({transform: 'scale(1.4)'})),
+    transition('small <=> large', animate('500ms'))
+  ])]
 })
-export class SignUpButtonComponent implements OnInit {
+export class SignUpButtonComponent {
+
   @Output() numberOfClicks: EventEmitter<number> = new EventEmitter();
   clicks = 0;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  state: string = 'small';
 
   handleClick(): void {
+    this.state = (this.state === 'small' ? 'large' : 'small');
     this.clicks++;
     this.numberOfClicks.emit(this.clicks);
   }
-
 }
