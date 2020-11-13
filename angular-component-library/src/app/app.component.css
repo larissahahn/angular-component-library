@@ -45,11 +45,21 @@
 }
 .sidenav-right-panel {
   margin: 2em;
-  padding: 2em;
+  padding: 1em;
 }
 .mat-grid-tile {
   padding: 2em;
   text-align: center;
+}
+.float-left {
+  float: left;
+  margin-right:.5em;
+  padding: 1em;
+}
+.float-right {
+  float: right;
+  margin-left:.5em;
+  padding: 1em;
 }
 
 h1,

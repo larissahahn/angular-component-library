@@ -4,3 +4,5 @@
 
 export * from './lib/components/components.module';
 export * from './lib/components/button/button.component';
+export * from './lib/components/signup-button/signup-button.component';
+export * from './lib/components/addnew-button/addnew-button.component';

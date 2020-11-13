@@ -16,12 +16,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
   ],
   imports: [
     BrowserModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     ComponentsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSidenavModule,
-    MatGridListModule
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

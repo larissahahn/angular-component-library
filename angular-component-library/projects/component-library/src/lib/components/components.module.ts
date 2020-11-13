@@ -9,9 +9,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { ButtonComponent } from './button/button.component';
+import { SignUpButtonComponent } from './signup-button/signup-button.component';
+import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
 
 @NgModule({
-  declarations: [ButtonComponent],
+  declarations: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -21,6 +23,6 @@ import { ButtonComponent } from './button/button.component';
     MatSidenavModule,
     MatToolbarModule
   ],
-  exports: [ButtonComponent]
+  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent]
 })
 export class ComponentsModule { }

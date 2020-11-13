@@ -9,17 +9,16 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'lib-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+  selector: 'lib-signup-button',
+  templateUrl: './signup-button.component.html',
+  styleUrls: ['./signup-button.component.css'],
   animations: [
     // button animations
   ]
 })
-export class ButtonComponent implements OnInit {
+export class SignUpButtonComponent implements OnInit {
   @Output() numberOfClicks: EventEmitter<number> = new EventEmitter();
   clicks = 0;
-  buttonLabelText = 'Placeholder Text';
 
   constructor() { }
 
