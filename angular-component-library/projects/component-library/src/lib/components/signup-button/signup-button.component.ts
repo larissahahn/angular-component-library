@@ -23,7 +23,7 @@ export class SignUpButtonComponent {
 
   @Output() numberOfClicks: EventEmitter<number> = new EventEmitter();
   clicks = 0;
-  state: string = 'small';
+  state = 'small';
 
   handleClick(): void {
     this.state = (this.state === 'small' ? 'large' : 'small');
