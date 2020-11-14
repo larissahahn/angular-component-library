@@ -1,3 +1,7 @@
 @import "./custom";
 $theme: mat-light-theme($primary,$accent,$warn);
+$custom-theme-dark-pink: #EC407A;
 @include angular-material-theme($theme);
+
+/* Creating three custom Angular Google Material Themes
+for the Angular Custom Component Library to toggle*/
