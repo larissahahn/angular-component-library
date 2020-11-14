@@ -22,10 +22,20 @@
 	"Generate Growth Animation": {
 		"prefix": "animategrow",
 		"body": ["animations: [trigger('myTrigger', [",
-			"state('small', style({transform: 'scale(1)'})),",
-			"state('large', style({transform: 'scale(1.4)'})),",
-			"transition('small <=> large', animate('500ms'))",
+			"\tstate('small', style({transform: 'scale(1)'})),",
+			"\tstate('large', style({transform: 'scale(1.4)'})),",
+			"\ttransition('small <=> large', animate('500ms'))",
 			"])]"],
 		"description": "Generate the entire Angular Growth Animation Code Snippet"
+	},
+	"Animate State: Variable": {
+		"prefix": "animatestate",
+		"body": ["state('${1:stateName}', style({${2:styleProp}: '${3:styleValue}'})),"],
+		"description": "Generate Animations State"
+	},
+	"Animate Transition: Variable": {
+		"prefix": "animatetransition",
+		"body": ["transition('${1:state1} <=> ${2:state2}', animate('${3:animateValue}'))"],
+		"description": "Generate Animations Transition"
 	}
 }
