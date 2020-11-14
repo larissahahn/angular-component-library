@@ -1,6 +1,9 @@
+<div id="signup-button-grid" class="signup-button-grid"></div>
 <button type="button" class="pulse"
         mat-flat-button color="accent"
         [@myTrigger]='state'
+        (mouseenter)="updateButtonState('hover')"
+        (mouseleave)="updateButtonState('default')"
         (click)="handleClick()">
     <label class="mat-typography sign-up-label">SIGN UP</label>
 </button>
