@@ -28,6 +28,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/bootstrap/scss/bootstrap-grid.scss",
+              "./node_modules/bootstrap/scss/bootstrap-reboot.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -91,6 +94,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/bootstrap/scss/bootstrap-grid.scss",
+              "./node_modules/bootstrap/scss/bootstrap-reboot.scss",
               "src/styles.scss"
             ],
             "scripts": []

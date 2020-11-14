@@ -1,8 +1,7 @@
-@import './scss/_variables.scss';
-
-/* @import "~@angular/material/prebuilt-themes/deeppurple-amber.scss"; */
-// @import "~@angular/material/prebuilt-themes/indigo-pink.scss";
-/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.scss"; */
-/* @import "~@angular/material/prebuilt-themes/purple-green.scss"; */
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import './scss/_variables.scss'; 
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
