@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { ButtonComponent } from './button/button.component';
 import { SignUpButtonComponent } from './signup-button/signup-button.component';
@@ -43,7 +44,8 @@ import { PrintButtonComponent } from './print-button/print-button.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatMenuModule
   ],
   exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent, PrintButtonComponent]
 })

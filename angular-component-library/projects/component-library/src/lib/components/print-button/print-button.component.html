@@ -2,10 +2,22 @@
         id="lib-print-button"
         aria-label="Print button"
         matTooltip="Print"
+        [matMenuTriggerFor]="printMenu"
         mat-mini-fab
         color="accent" 
-        [@trigger]='state'
+        [@stateTrigger]='state'
         (mouseenter)="updateButtonState('hover')"
-        (mouseleave)="updateButtonState('default')">
+        (mouseleave)="updateButtonState('default')"
+        (click)="openPrintMenu()">
         <mat-icon [inline]="true">print</mat-icon>
 </button>
+<mat-menu #printMenu="matMenu">
+        <button mat-menu-item>
+                <mat-icon>assessment</mat-icon>
+                <span>Print PDF</span>
+        </button>
+        <button mat-menu-item disabled>
+                <mat-icon>description</mat-icon>
+                <span>Print Word Doc</span>
+        </button>
+</mat-menu>
