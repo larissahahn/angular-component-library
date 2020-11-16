@@ -16,7 +16,7 @@ import { SignUpButtonComponent } from './signup-button/signup-button.component';
 import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
 // import { EditButtonComponent } from './edit-button/edit-button.component';
 // import { LoginButtonComponent } from './login-button/login-button.component';
-// import { ComposeButtonComponent } from './compose-button/compose-button.component';
+import { ComposeButtonComponent } from './compose-button/compose-button.component';
 import { DeleteButtonComponent } from './delete-button/delete-button.component';
 // import { AddtocartButtonComponent } from './addtocart-button/addtocart-button.component';
 import { PrintButtonComponent } from './print-button/print-button.component';
@@ -29,7 +29,7 @@ import { PrintButtonComponent } from './print-button/print-button.component';
     AddnewButtonComponent,
     // EditButtonComponent,
     // LoginButtonComponent,
-    // ComposeButtonComponent,
+    ComposeButtonComponent,
     DeleteButtonComponent,
     // AddtocartButtonComponent,
     PrintButtonComponent
@@ -47,6 +47,13 @@ import { PrintButtonComponent } from './print-button/print-button.component';
     MatTooltipModule,
     MatMenuModule
   ],
-  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent, PrintButtonComponent, DeleteButtonComponent]
+  exports: [
+    ButtonComponent,
+    SignUpButtonComponent,
+    AddnewButtonComponent,
+    PrintButtonComponent,
+    DeleteButtonComponent,
+    ComposeButtonComponent
+  ]
 })
 export class ComponentsModule { }

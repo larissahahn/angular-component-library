@@ -8,3 +8,4 @@ export * from './lib/components/signup-button/signup-button.component';
 export * from './lib/components/addnew-button/addnew-button.component';
 export * from './lib/components/print-button/print-button.component';
 export * from './lib/components/delete-button/delete-button.component';
+export * from './lib/components/compose-button/compose-button.component';

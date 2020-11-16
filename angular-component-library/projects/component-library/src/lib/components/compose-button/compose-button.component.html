@@ -1,1 +1,11 @@
-<p>compose-button works!</p>
+<button type="button" 
+        id="lib-compose-button"
+        aria-label="Compose button"
+        matTooltip="Compose"
+        mat-mini-fab
+        color="accent" 
+        [@trigger]='state'
+        (mouseenter)="updateButtonState('hover')"
+        (mouseleave)="updateButtonState('default')">
+        <mat-icon [inline]="true">{{icon}}</mat-icon>
+</button>
