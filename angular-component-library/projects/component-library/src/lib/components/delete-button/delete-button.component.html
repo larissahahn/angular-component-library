@@ -1,1 +1,11 @@
-<p>delete-button works!</p>
+<button type="button" 
+        id="lib-delete-button"
+        aria-label="Delete button"
+        matTooltip="Delete"
+        mat-mini-fab
+        color="accent" 
+        [@trigger]='state'
+        (mouseenter)="updateButtonState('hover')"
+        (mouseleave)="updateButtonState('default')">
+        <mat-icon [inline]="true">delete_forever</mat-icon>
+</button>

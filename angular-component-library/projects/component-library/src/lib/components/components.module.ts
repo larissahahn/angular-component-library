@@ -17,7 +17,7 @@ import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
 // import { EditButtonComponent } from './edit-button/edit-button.component';
 // import { LoginButtonComponent } from './login-button/login-button.component';
 // import { ComposeButtonComponent } from './compose-button/compose-button.component';
-// import { DeleteButtonComponent } from './delete-button/delete-button.component';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
 // import { AddtocartButtonComponent } from './addtocart-button/addtocart-button.component';
 import { PrintButtonComponent } from './print-button/print-button.component';
 // import { SearchButtonComponent } from './search-button/search-button.component';
@@ -30,7 +30,7 @@ import { PrintButtonComponent } from './print-button/print-button.component';
     // EditButtonComponent,
     // LoginButtonComponent,
     // ComposeButtonComponent,
-    // DeleteButtonComponent,
+    DeleteButtonComponent,
     // AddtocartButtonComponent,
     PrintButtonComponent
     // SearchButtonComponent
@@ -47,6 +47,6 @@ import { PrintButtonComponent } from './print-button/print-button.component';
     MatTooltipModule,
     MatMenuModule
   ],
-  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent, PrintButtonComponent]
+  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent, PrintButtonComponent, DeleteButtonComponent]
 })
 export class ComponentsModule { }
