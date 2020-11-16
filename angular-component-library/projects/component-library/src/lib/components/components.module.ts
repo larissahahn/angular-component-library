@@ -13,9 +13,27 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ButtonComponent } from './button/button.component';
 import { SignUpButtonComponent } from './signup-button/signup-button.component';
 import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
+// import { EditButtonComponent } from './edit-button/edit-button.component';
+// import { LoginButtonComponent } from './login-button/login-button.component';
+// import { ComposeButtonComponent } from './compose-button/compose-button.component';
+// import { DeleteButtonComponent } from './delete-button/delete-button.component';
+// import { AddtocartButtonComponent } from './addtocart-button/addtocart-button.component';
+import { PrintButtonComponent } from './print-button/print-button.component';
+// import { SearchButtonComponent } from './search-button/search-button.component';
 
 @NgModule({
-  declarations: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent],
+  declarations: [
+    ButtonComponent,
+    SignUpButtonComponent,
+    AddnewButtonComponent,
+    // EditButtonComponent,
+    // LoginButtonComponent,
+    // ComposeButtonComponent,
+    // DeleteButtonComponent,
+    // AddtocartButtonComponent,
+    PrintButtonComponent
+    // SearchButtonComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -27,6 +45,6 @@ import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
     MatIconModule,
     MatTooltipModule
   ],
-  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent]
+  exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent, PrintButtonComponent]
 })
 export class ComponentsModule { }

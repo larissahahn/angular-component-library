@@ -1,0 +1,11 @@
+<button type="button" 
+        id="lib-print-button"
+        aria-label="Print button"
+        matTooltip="Print"
+        mat-mini-fab
+        color="accent" 
+        [@trigger]='state'
+        (mouseenter)="updateButtonState('hover')"
+        (mouseleave)="updateButtonState('default')">
+        <mat-icon [inline]="true">print</mat-icon>
+</button>
