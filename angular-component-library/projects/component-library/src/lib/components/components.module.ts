@@ -7,6 +7,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ButtonComponent } from './button/button.component';
 import { SignUpButtonComponent } from './signup-button/signup-button.component';
@@ -21,7 +23,9 @@ import { AddnewButtonComponent } from './addnew-button/addnew-button.component';
     MatBadgeModule,
     MatButtonModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   exports: [ButtonComponent, SignUpButtonComponent, AddnewButtonComponent]
 })

@@ -1,12 +1,10 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   trigger,
   state,
   style,
   animate,
-  transition,
-  keyframes
+  transition
 } from '@angular/animations';
 import * as confetti from 'canvas-confetti';
 
@@ -14,7 +12,7 @@ import * as confetti from 'canvas-confetti';
   selector: 'lib-signup-button',
   templateUrl: './signup-button.component.html',
   styleUrls: ['./signup-button.component.scss'],
-  animations: [trigger('myTrigger', [
+  animations: [trigger('trigger', [
     state('default', style({transform: 'scale(1)'})),
     state('hover', style({transform: 'scale(1.1)'})),
     state('press', style({transform: 'scale(1.2)',

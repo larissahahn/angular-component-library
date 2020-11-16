@@ -1,6 +1,11 @@
 <button type="button" 
-        id="lib-addnew-button" 
-        mat-flat-button color="accent" 
-        (click)="handleClick()">
-    <label class="mat-typography .button-label">Add New</label>
+        id="lib-addnew-button"
+        aria-label="Add New button"
+        matTooltip="Add New"
+        mat-mini-fab
+        color="accent" 
+        [@trigger]='state'
+        (mouseenter)="updateButtonState('hover')"
+        (mouseleave)="updateButtonState('default')">
+        <mat-icon [inline]="true">add</mat-icon>
 </button>

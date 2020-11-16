@@ -1,7 +1,8 @@
 <div id="signup-button-grid" class="signup-button-grid"></div>
 <button type="button" class="pulse"
         mat-flat-button color="accent"
-        [@myTrigger]='state'
+        aria-label="Sign Up button"
+        [@trigger]='state'
         (mouseenter)="updateButtonState('hover')"
         (mouseleave)="updateButtonState('default')"
         (click)="handleClick()">
