@@ -1,12 +1,12 @@
 <button type="button" 
-    id="lib-edit-button"
-    aria-label="Edit button"
-    matTooltip="Edit"
+    id="lib-delete-inline-button"
+    aria-label="Delete button"
+    matTooltip="Delete"
     mat-mini-fab
     color="accent" 
     [@trigger]='state'
     (mouseenter)="updateButtonState('hover')"
     (mouseleave)="updateButtonState('default')"
     (click)="handleClick()">
-    <mat-icon [inline]="true">edit</mat-icon>
+    <mat-icon [inline]="true">delete_forever</mat-icon>
 </button>

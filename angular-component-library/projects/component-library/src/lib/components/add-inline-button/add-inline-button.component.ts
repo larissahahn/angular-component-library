@@ -8,9 +8,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'lib-edit-button',
-  templateUrl: './edit-button.component.html',
-  styleUrls: ['./edit-button.component.scss'],
+  selector: 'lib-add-inline-button',
+  templateUrl: './add-inline-button.component.html',
+  styleUrls: ['./add-inline-button.component.scss'],
   animations: [
     trigger('trigger', [
       state('default', style({transform: 'scale(1)'})),
@@ -19,7 +19,7 @@ import {
       transition('hover => default', animate('200ms ease-out'))
     ])]
 })
-export class EditButtonComponent {
+export class AddInlineButtonComponent {
   state = 'default';
 
   updateButtonState(mouseState: string): void {

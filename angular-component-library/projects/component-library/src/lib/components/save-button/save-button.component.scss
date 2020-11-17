@@ -1,0 +1,17 @@
+@import './../../../../../../src/styles.scss';
+
+// Move this to global styles.scss
+.mat-mini-fab.mat-accent {
+    background: transparent;
+    border: 0;
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: none;
+}
+
+.mat-icon.mat-icon-inline {
+    color: #039be5;
+}
